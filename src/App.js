@@ -1,23 +1,90 @@
 import logo from './logo.svg';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faChessKing, 
+  faChessQueen, 
+  faChessRook, 
+  faChessBishop, 
+  faChessKnight, 
+  faChessPawn 
+} from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <table>
+        <tr>
+          <td className='g'><FontAwesomeIcon icon={faChessRook} /></td>
+          <td className='w'><FontAwesomeIcon icon={faChessKnight} /></td>
+          <td className='g'><FontAwesomeIcon icon={faChessBishop} /></td>
+          <td className='w'><FontAwesomeIcon icon={faChessQueen} /></td>
+          <td className='g'><FontAwesomeIcon icon={faChessKing} /></td>
+          <td className='w'><FontAwesomeIcon icon={faChessBishop} /></td>
+          <td className='g'><FontAwesomeIcon icon={faChessKnight} /></td>
+          <td className='w'><FontAwesomeIcon icon={faChessRook} /></td>
+        </tr>
+        <tr>
+          <td className='w'><FontAwesomeIcon icon={faChessPawn} /></td>
+          <td className='g'><FontAwesomeIcon icon={faChessPawn} /></td>
+          <td className='w'><FontAwesomeIcon icon={faChessPawn} /></td>
+          <td className='g'><FontAwesomeIcon icon={faChessPawn} /></td>
+          <td className='w'><FontAwesomeIcon icon={faChessPawn} /></td>
+          <td className='g'><FontAwesomeIcon icon={faChessPawn} /></td>
+          <td className='w'><FontAwesomeIcon icon={faChessPawn} /></td>
+          <td className='g'><FontAwesomeIcon icon={faChessPawn} /></td>
+        </tr>
+        <tr>
+          <td className='g'></td>
+          <td className='w'></td>
+          <td className='g'></td>
+          <td className='w'></td>
+          <td className='g'></td>
+          <td className='w'></td>
+          <td className='g'></td>
+          <td className='w'></td>
+        </tr>
+        <tr>
+          <td className='w'></td>
+          <td className='g'></td>
+          <td className='w'></td>
+          <td className='g'></td>
+          <td className='w'></td>
+          <td className='g'></td>
+          <td className='w'></td>
+          <td className='g'></td>
+        </tr>
+        <tr>
+          <td className='g'></td>
+          <td className='w'></td>
+          <td className='g'></td>
+          <td className='w'></td>
+          <td className='g'></td>
+          <td className='w'></td>
+          <td className='g'></td>
+          <td className='w'></td>
+        </tr>
+        <tr>
+          <td className='w'><FontAwesomeIcon icon={faChessPawn} /></td>
+          <td className='g'><FontAwesomeIcon icon={faChessPawn} /></td>
+          <td className='w'><FontAwesomeIcon icon={faChessPawn} /></td>
+          <td className='g'><FontAwesomeIcon icon={faChessPawn} /></td>
+          <td className='w'><FontAwesomeIcon icon={faChessPawn} /></td>
+          <td className='g'><FontAwesomeIcon icon={faChessPawn} /></td>
+          <td className='w'><FontAwesomeIcon icon={faChessPawn} /></td>
+          <td className='g'><FontAwesomeIcon icon={faChessPawn} /></td>
+        </tr>
+        <tr>
+          <td className='g'><FontAwesomeIcon icon={faChessRook} /></td>
+          <td className='w'><FontAwesomeIcon icon={faChessKnight} /></td>
+          <td className='g'><FontAwesomeIcon icon={faChessBishop} /></td>
+          <td className='w'><FontAwesomeIcon icon={faChessQueen} /></td>
+          <td className='g'><FontAwesomeIcon icon={faChessKing} /></td>
+          <td className='w'><FontAwesomeIcon icon={faChessBishop} /></td>
+          <td className='g'><FontAwesomeIcon icon={faChessKnight} /></td>
+          <td className='w'><FontAwesomeIcon icon={faChessRook} /></td>
+        </tr>
+      </table>
     </div>
   );
 }
